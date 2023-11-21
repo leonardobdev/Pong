@@ -127,17 +127,17 @@
 					playerTwo.x = event.changedTouches[event.changedTouches.length - 1].pageX - playerTwo.width;
 				}
 			});
-window.addEventListener("keydown", (e)=>{
-if(e.key=="ArrowLeft" && playerOne.x >= 0 + playerOne.width){
-playerOne.x -= 40;
-}else if(e.key=="ArrowRight" && playerOne.x < canvas.width - playerOne.width * 2){
-playerOne.x += 40;
-}else if(e.key=="a" && playerTwo.x >= 0 + playerTwo.width / 2){
-playerTwo.x -= 40;
-}else if(e.key=="d" && playerTwo.x <= canvas.width - playerTwo.width * 2){
-playerTwo.x += 40;
-}
-});
+			window.addEventListener("keydown", (e) => {
+				if (e.key == "ArrowLeft" && playerOne.x >= 0 + playerOne.width / 2) {
+					playerOne.x -= 40;
+				} else if (e.key == "ArrowRight" && playerOne.x < canvas.width - playerOne.width * 2) {
+					playerOne.x += 40;
+				} else if (e.key == "a" && playerTwo.x >= 0 + playerTwo.width / 2) {
+					playerTwo.x -= 40;
+				} else if (e.key == "d" && playerTwo.x <= canvas.width - playerTwo.width * 2) {
+					playerTwo.x += 40;
+				}
+			});
 		});
 	</script>
 	<style>
