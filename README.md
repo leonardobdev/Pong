@@ -1,3 +1,3 @@
 # Pong
 
-https://leonardobdev.github.io/pong/
+https://leonardobdev.github.io/Pong/
